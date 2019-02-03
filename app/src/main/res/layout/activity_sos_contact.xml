@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".SOSsignal.sosContact">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Emergency Contact Name 1"
+        android:layout_marginTop="50dp"
+        android:id="@+id/emerconname1"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Emergency Contact No 1"
+        android:id="@+id/emerconnum1"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        />
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Emergency Contact Name 2"
+        android:id="@+id/emerconname2"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        />
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Emergency Contact No 2"
+        android:layout_marginTop="50dp"
+        android:id="@+id/emerconnnum2"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/update"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Update"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

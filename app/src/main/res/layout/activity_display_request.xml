@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".FundRaising.displayRequest">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Username"
+                android:textColor="#fff"
+                android:id="@+id/displayReqfundName"
+                android:layout_marginTop="20dp"
+                android:textSize="36sp"
+                android:gravity="center"
+
+                />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Title"
+                android:id="@+id/displayReqfundTitle"
+                android:textColor="#fff"
+                android:layout_marginTop="40dp"
+                android:textSize="20sp"
+                android:gravity="center"
+
+                />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/displayReqfundDesc"
+                android:layout_width="match_parent"
+                android:text="Description"
+                android:textColor="#fff"
+                android:layout_marginTop="40dp"
+                android:textSize="20sp"
+                android:gravity="center"
+
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginTop="40dp"
+                android:id="@+id/displayReqfundImage"
+                android:layout_height="250dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_image_aspect_ratio_black_24dp"
+                />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="UPI ID"
+                android:id="@+id/displayReqfundUpiID"
+                android:textColor="#fff"
+                android:layout_marginTop="40dp"
+                android:textSize="20sp"
+                android:gravity="center"
+
+                />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Contact No"
+                android:textColor="#fff"
+                android:layout_marginTop="40dp"
+                android:id="@+id/displayReqfundConatct"
+                android:textSize="20sp"
+                android:gravity="center"
+
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="#fff"
+                android:layout_marginBottom="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/displayReqfundDonate"
+                android:gravity="center"
+                android:text="Donate"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

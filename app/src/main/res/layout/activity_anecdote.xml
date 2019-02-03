@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".Write.Anecdote">
+
+
+    <!--********************************** TO handle overflow ******************-->
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" >
+
+
+        <!-- ********************Title of the petetion and logo********************-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Anecdote"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:padding="8dp"
+                android:textColor="#fff"
+
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+
+                    android:id="@+id/newPetTitle"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginRight="15dp"
+                    android:hint="Title"
+                    android:textColor="#fff"
+
+                    android:textColorHint="#f5f1f1"
+
+
+                    />
+
+                <ImageView
+                    android:id="@+id/newPetTitleinfo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/info"
+                    android:textColor="#0b0b0b"
+                    android:padding="8dp"
+                    android:textColorHint="#0b0b0b"
+                    android:background="@drawable/button_on"
+                    android:onClick="showInfoTitle" />
+
+            </LinearLayout>
+
+            <!--******************* Decision Maker******************** -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:layout_width="0dp"
+                    android:id="@+id/newPetDM"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:layout_marginTop="15dp"
+                    android:padding="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="15dp"
+                    android:hint="What happened ?"
+                    android:textColor="#fff"
+                    android:textColorHint="#f7f2f2"
+
+
+
+                    />
+
+                <ImageView
+                    android:id="@+id/newPetDMinfo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:src="@drawable/info"
+                    android:textColor="#0b0b0b"
+                    android:textColorHint="#0b0b0b"
+                    android:background="@drawable/button_on"
+                    android:onClick="showInfoDec" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="24dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <EditText
+                    android:id="@+id/newPetSol"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="7"
+                    android:padding="8dp"
+                    android:hint="Your Story !"
+                    android:textColor="#fff"
+                    android:textColorHint="#f7f2f2"
+
+                    android:inputType="textLongMessage" />
+
+                <ImageView
+                    android:id="@+id/newPetSolinfo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="15dp"
+                    android:padding="8dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/info"
+                    android:textColor="#0b0b0b"
+                    android:textColorHint="#0b0b0b"
+                    android:background="@drawable/button_on"
+                    android:onClick="showInfoSol" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/newPetupload"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/newPetuploadBtn"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="15dp"
+                    android:textSize="18sp"
+                    android:hint="Select Image"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_attach_file_black_24dp"
+                    android:layout_weight="7"
+                    android:padding="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#0b0b0b"
+                    android:textColorHint="#0b0b0b"
+                    android:background="@drawable/button_on"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/newPetuploadinfo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:padding="8dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/info"
+                    android:background="@drawable/button_on"
+                    android:onClick="showInfoPhoto" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/newPetImg"
+                    android:layout_height="190dp"
+                    android:src="@drawable/ic_image_aspect_ratio_black_24dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="15dp"
+                    android:hint="Conclude with an inspiring thought."
+                    android:textColor="#fff"
+                    android:textColorHint="#ece8e8"
+                    android:textSize="18sp"
+                    android:id="@+id/netPetSignThresh"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/newPetSumbit"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:text="Share"
+                    android:background="@drawable/button_on"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
