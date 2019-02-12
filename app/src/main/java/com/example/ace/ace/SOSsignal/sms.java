@@ -13,7 +13,7 @@ public class sms implements Runnable {
     public sms(String msg, String phone) {
         this.msg = msg;
         this.phone = phone;
-        this.chabhi = "uC2hs3soY+8-Za0Ekmvhfzku7hFw5xmT521uxOt3sQ";
+        this.chabhi = "---------:->---------------";
     }
 
     @Override
